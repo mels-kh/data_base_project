@@ -10,7 +10,7 @@ class Teacher(Base):
     first_last_name = Column(String)
     kafedra = Column(String)
     degree = Column(String)
-    job_title = Column(Integer)
+    job_title = Column(String)
     
     # 1->N
     participance = relationship("Participance", back_populates="Teacher")
